@@ -27,7 +27,7 @@ public class KafkaproducerApplication {
 
 	@GetMapping("/publishJson")
 	public String publishMessage() {
-		User user = new User(2532, "User88", new String[] { "Bangalore", "BTM", "house 90" });
+		User user = new User(1, "imran", new String[] { "Dhaka", "Cumilla", "Bngladesh" });
 		template.send(topic, user);
 		return "Json Data published";
 	}
