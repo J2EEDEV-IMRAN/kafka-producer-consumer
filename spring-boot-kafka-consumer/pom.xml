@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>springboot-kafkaproducer</artifactId>
+	<artifactId>spring-boot-kafka-consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>kafkaproducer</name>
-	<description>Publish message using kafka</description>
+	<name>spring-boot-kafka-consumer</name>
+	<description>Spring Boot Kafka Consumer</description>
 
 	<properties>
 		<java.version>11</java.version>
@@ -27,7 +27,7 @@
 			<groupId>org.springframework.kafka</groupId>
 			<artifactId>spring-kafka</artifactId>
 		</dependency>
-		<dependency>
+        <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>

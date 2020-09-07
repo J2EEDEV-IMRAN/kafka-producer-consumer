@@ -17,11 +17,11 @@ public class KafkaproducerApplication {
 	@Autowired
 	private KafkaTemplate<String, Object> template;
 
-	private String topic = "stringTopic";
+	private String topic = "stringtopicanother";
 
 	@GetMapping("/publish/{name}")
 	public String publishMessage(@PathVariable String name) {
-		template.send(topic , " Topic name is " + name);
+		template.send(topic, " Topic name is " + name);
 		return "Data published";
 	}
 
